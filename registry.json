@@ -1,10 +1,10 @@
 {
   "$schema": "https://ui.shadcn.com/schema.json",
   "name": "random compo",
-  "homepage": "https://aswin-m-portfolio.vercel.app/",
+  "homepage": "https://uilibrary-9xr5.vercel.app/",
   "items": [
     {
-      "name": "RetroButton",
+      "name": "Retrobutton",
       "type": "registry:ui",
       "title": "retro button",
       "description": "some random button",
@@ -28,7 +28,7 @@
       ]
     },
      {
-      "name": "floating-Dock",
+      "name": "floatingdock",
       "type": "registry:ui",
       "title": "Dock",
       "description": "A floating dock",
@@ -40,7 +40,7 @@
       ]
     },
      {
-      "name": "Login form",
+      "name": "Login",
       "type": "registry:ui",
       "title": "loginform",
       "description": "A login form",

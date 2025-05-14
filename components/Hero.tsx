@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import RetroButton from "@/registry/default/ui/RetroButton";
 import Navbar from "@/registry/default/ui/Navbar";
+import Link from "next/link";
 
 const retroSVGs = [
   {
@@ -76,8 +77,10 @@ function Hero() {
           A set of beautifully-designed, Retro Themed, accessible components
         </p>
         <div className="mt-8 flex w-full justify-center gap-5">
+          <Link href={"/origin/docs"}>
           <RetroButton width="150px" height="50px" text="Get Started" />
-          <RetroButton width="150px" height="50px" text="View Docs" />
+          
+          </Link>
         </div>
       </div>
     </div>

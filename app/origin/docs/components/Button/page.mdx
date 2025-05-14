@@ -1,0 +1,52 @@
+import { Table, Playground } from 'nextra/components'
+import RetroButton from '../../../../../registry/default/ui/RetroButton'
+
+# RetroButton Component
+
+A retro-themed, animated button built with `framer-motion`, customizable via props.
+
+## Props
+
+<Table>
+  <thead>
+    <Table.Tr>
+      <Table.Th>Prop</Table.Th>
+      <Table.Th>Type</Table.Th>
+      <Table.Th>Default</Table.Th>
+      <Table.Th>Description</Table.Th>
+    </Table.Tr>
+  </thead>
+  <tbody>
+    <Table.Tr>
+      <Table.Td>text</Table.Td>
+      <Table.Td>string</Table.Td>
+      <Table.Td>"Click"</Table.Td>
+      <Table.Td>Text inside the button</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>color</Table.Td>
+      <Table.Td>string</Table.Td>
+      <Table.Td>"#c33740"</Table.Td>
+      <Table.Td>Background color of the button</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>width</Table.Td>
+      <Table.Td>string</Table.Td>
+      <Table.Td>—</Table.Td>
+      <Table.Td>CSS width of the button (e.g., "150px", "100%")</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>height</Table.Td>
+      <Table.Td>string</Table.Td>
+      <Table.Td>—</Table.Td>
+      <Table.Td>CSS height of the button (e.g., "40px")</Table.Td>
+    </Table.Tr>
+  </tbody>
+</Table>
+
+## Live Demo
+
+<Playground
+  source={`<RetroButton />`}
+  components={{ RetroButton }}
+/>

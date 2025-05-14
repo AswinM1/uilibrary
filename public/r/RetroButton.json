@@ -1,6 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "RetroButton",
+  "name": "Retrobutton",
   "type": "registry:ui",
   "title": "retro button",
   "description": "some random button",

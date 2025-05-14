@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "Login",
+  "type": "registry:ui",
+  "title": "loginform",
+  "description": "A login form",
+  "files": [
+    {
+      "path": "registry/default/ui/Login.tsx",
+      "content": "\"use client\";\r\nimport React, { useState } from 'react';\r\nimport { motion } from 'framer-motion';\r\n\r\ninterface LoginProps {\r\n  color?: string;\r\n  text?: string;\r\n}\r\n\r\nexport default function Login({ text = \"Login\", color = \"#dfa05d\" }: LoginProps) {\r\n  const [formData, setFormData] = useState({ username: '', password: '' });\r\n\r\n  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {\r\n    setFormData({\r\n      ...formData,\r\n      [e.target.name]: e.target.value,\r\n    });\r\n  };\r\n\r\n  const handleSubmit = (e: React.FormEvent) => {\r\n    e.preventDefault();\r\n    console.log('Login submitted:', formData);\r\n  };\r\n\r\n  return (\r\n    <div>\r\n      <form\r\n        onSubmit={handleSubmit}\r\n        className='flex flex-col shadow-xl shadow-black/50 mx-auto justify-center items-center gap-5 border-2 px-11 py-7'\r\n        style={{ backgroundColor: color }}\r\n      >\r\n        <h2 className='font-bold tracking-tight text-4xl text-black'>{text}</h2>\r\n\r\n        <input\r\n          className='border-2 px-3 py-3 rounded-sm shadow-[2px_2px_0px_black] text-black focus:outline-none focus:ring-0'\r\n          type=\"text\"\r\n          name=\"username\"\r\n          placeholder=\"Username\"\r\n          value={formData.username}\r\n          onChange={handleChange}\r\n        />\r\n\r\n        <input\r\n          className='border-2 px-3 py-3 rounded-sm shadow-[2px_2px_0px_black] text-black focus:outline-none focus:ring-0'\r\n          type=\"password\"\r\n          name=\"password\"\r\n          placeholder=\"Password\"\r\n          value={formData.password}\r\n          onChange={handleChange}\r\n        />\r\n\r\n        <motion.button\r\n          whileTap={{ scale: 0.95, boxShadow: 'none' }}\r\n          type=\"submit\"\r\n          className='w-fit text-center mx-auto py-2 px-6 border shadow-[0px_4px_2px_black] bg-red-500 font-bold'\r\n        >\r\n          {text}\r\n        </motion.button>\r\n\r\n        <p className='font-sans mx-2 text-black'>\r\n          Create an account <span className='font-bold mx-2 underline text-black'>Sign up</span>\r\n        </p>\r\n      </form>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:ui"
+    }
+  ]
+}

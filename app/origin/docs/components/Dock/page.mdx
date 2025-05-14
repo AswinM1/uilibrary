@@ -1,0 +1,22 @@
+import { Playground } from 'nextra/components'
+import Dock from '../../../../../registry/default/ui/Dock'
+
+# Dock Component
+
+A retro-style dock for your UI, typically used to display shortcut icons at the bottom of the screen with animation and hover effects.
+
+## Props Table
+
+| Prop       | Type     | Default   | Description                                      |
+|------------|----------|-----------|--------------------------------------------------|
+| `items`    | `Array`  | `[]`      | List of dock items (icons/text) to be displayed |
+
+
+> Customize `Dock` via these props to fit your layout needs.
+
+## CLI Usage (Hypothetical)
+
+If your `Dock` component is also exposed through a CLI (for configuration or preview in a dev tool):
+
+```bash
+npx dock-ui preview --position bottom --size 64 --hoverZoom true
