@@ -1,0 +1,80 @@
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "name": "random compo",
+  "homepage": "https://aswin-m-portfolio.vercel.app/",
+  "items": [
+    {
+      "name": "RetroButton",
+      "type": "registry:ui",
+      "title": "retro button",
+      "description": "some random button",
+      "files": [
+        {
+          "path": "registry/default/ui/RetroButton.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+     {
+      "name": "Bento",
+      "type": "registry:ui",
+      "title": "Bentogrid",
+      "description": "bento grid",
+      "files": [
+        {
+          "path": "registry/default/ui/Bento.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+     {
+      "name": "floating-Dock",
+      "type": "registry:ui",
+      "title": "Dock",
+      "description": "A floating dock",
+      "files": [
+        {
+          "path": "registry/default/ui/Dock.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+     {
+      "name": "Login form",
+      "type": "registry:ui",
+      "title": "loginform",
+      "description": "A login form",
+      "files": [
+        {
+          "path": "registry/default/ui/Login.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+     {
+      "name": "Navbar",
+      "type": "registry:ui",
+      "title": "floating navbar",
+      "description": "A navbar",
+      "files": [
+        {
+          "path": "registry/default/ui/Navbar.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+     {
+      "name": "Profile card",
+      "type": "registry:ui",
+      "title": "Profile card",
+      "description": "A profile card",
+      "files": [
+        {
+          "path": "registry/default/ui/Profile.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    }
+  ],
+  "dependencies":["lucide-react","motion","react-icons"]
+}
