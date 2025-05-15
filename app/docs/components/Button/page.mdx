@@ -1,0 +1,94 @@
+import { Table, Playground,Tabs } from 'nextra/components'
+import RetroButton from '../../../../registry/default/ui/RetroButton'
+
+# RetroButton Component
+
+A retro-themed, animated button built with `framer-motion`, customizable via props.
+
+## Props
+
+<Table>
+  <thead>
+    <Table.Tr>
+      <Table.Th>Prop</Table.Th>
+      <Table.Th>Type</Table.Th>
+      <Table.Th>Default</Table.Th>
+      <Table.Th>Description</Table.Th>
+    </Table.Tr>
+  </thead>
+  <tbody>
+    <Table.Tr>
+      <Table.Td>text</Table.Td>
+      <Table.Td>string</Table.Td>
+      <Table.Td>"Click"</Table.Td>
+      <Table.Td>Text inside the button</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>color</Table.Td>
+      <Table.Td>string</Table.Td>
+      <Table.Td>"#c33740"</Table.Td>
+      <Table.Td>Background color of the button</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>width</Table.Td>
+      <Table.Td>string</Table.Td>
+      <Table.Td>—</Table.Td>
+      <Table.Td>CSS width of the button (e.g., "150px", "100%")</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>height</Table.Td>
+      <Table.Td>string</Table.Td>
+      <Table.Td>—</Table.Td>
+      <Table.Td>CSS height of the button (e.g., "40px")</Table.Td>
+    </Table.Tr>
+  </tbody>
+</Table>
+
+## Live Demo
+
+
+<Tabs items={['component', 'code']}>
+ <Tabs.Tab>
+<Playground
+  source={`<RetroButton />`}
+  components={{ RetroButton }}
+/>
+
+</Tabs.Tab>
+  <Tabs.Tab>
+  ```ts
+"use client";
+import React from "react";
+import { motion } from "framer-motion";
+
+interface ButtonProp {
+  text?: string;
+  color?: string;
+  width?: string;   // e.g., "150px" or "100%"
+  height?: string;  // e.g., "40px"
+}
+
+export default function RetroButton({
+  text = "Click",
+  color = "#c33740",
+  width,
+  height,
+}: ButtonProp) {
+  return (
+    <motion.button
+      whileTap={{ scale: 0.95, boxShadow: "0px 0px 0px 0px" }}
+      style={{
+        backgroundColor: color,
+        width: width,
+        height: height,
+      }}
+      className="  justify-center px-5 py-2 font-bold rounded-sm text-white border-2 shadow-[0px_4px_1px_white]"
+    >
+      {text}
+    </motion.button>
+  );
+}
+```
+  </Tabs.Tab>
+  
+</Tabs>

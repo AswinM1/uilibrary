@@ -1,0 +1,64 @@
+import { Table, Playground } from 'nextra/components'
+import Profile from '../../../../registry/default/ui/Profile'
+
+# Profile Component
+
+The `Profile` component displays a personal profile card featuring an image, name, hobbies, and a draggable, animated tech stack. It includes Framer Motion for smooth transitions and fun interactivity.
+
+## Props
+
+<Table>
+  <thead>
+    <Table.Tr>
+      <Table.Th>Prop</Table.Th>
+      <Table.Th>Type</Table.Th>
+      <Table.Th>Default</Table.Th>
+      <Table.Th>Description</Table.Th>
+    </Table.Tr>
+  </thead>
+  <tbody>
+    <Table.Tr>
+      <Table.Td>name</Table.Td>
+      <Table.Td><code>string</code></Table.Td>
+      <Table.Td>"Tyler"</Table.Td>
+      <Table.Td>Name of the person</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>hobbies</Table.Td>
+      <Table.Td><code>string[]</code></Table.Td>
+      <Table.Td>["sky staring", "movies", "sleeping", "dancing"]</Table.Td>
+      <Table.Td>List of hobbies</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>techStack</Table.Td>
+      <Table.Td><code>string[]</code></Table.Td>
+      <Table.Td>["React", "Java", "Meow#", "CatDb", "yapping", "meowing", "meow++"]</Table.Td>
+      <Table.Td>List of tech tools/skills</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>email</Table.Td>
+      <Table.Td><code>string</code></Table.Td>
+      <Table.Td>—</Table.Td>
+      <Table.Td>Email address (currently unused)</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>imageUrl</Table.Td>
+      <Table.Td><code>string</code></Table.Td>
+      <Table.Td>Image of Tyler the Cat</Table.Td>
+      <Table.Td>URL for profile picture</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>className</Table.Td>
+      <Table.Td><code>string</code></Table.Td>
+      <Table.Td>""</Table.Td>
+      <Table.Td>Additional classNames for custom styling</Table.Td>
+    </Table.Tr>
+  </tbody>
+</Table>
+
+## Live Example
+
+<Playground
+  source={`<Profile/>`}
+  components={{ Profile }}
+/>

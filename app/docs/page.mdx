@@ -1,0 +1,91 @@
+# Installation
+
+## Install Next.js
+
+
+### Create a new project
+```bash
+npx create-next-app@latest
+Copy
+On installation, you'll see the following prompts:
+```
+ ### configure your project
+ ```bash
+What is your project named? my-app
+Would you like to use TypeScript? No / Yes
+Would you like to use ESLint? No / Yes
+Would you like to use Tailwind CSS? No / Yes
+Would you like to use `src/` directory? No / Yes
+Would you like to use App Router? (recommended) No / Yes
+Would you like to customize the default import alias (@/*)? No / Yes
+What import alias would you like configured? @/*
+ ```
+
+### Run the app
+```bash
+Start the app
+cd my-app
+npm run dev
+```
+
+## Add Utilities
+Commonly used utilities for using Aceternity UI
+
+### Install dependencies
+```bash
+npm i motion clsx tailwind-merge
+Copy
+Add util file
+lib/utils.ts
+import { ClassValue, clsx } from "clsx";
+import { twMerge } from "tailwind-merge";
+ 
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
+}
+```
+
+### Next.js 15 and React 19 Framer Motion Fix
+if you're using Next.js 15 and React 19, you'll need to the following changes in order to use framer motion (which is now motion), since framer motion is not compatible with React 19 yet.
+
+```bash
+ 
+ "dependencies": {
+    "framer-motion": "^12.0.0-alpha.1",
+    "next": "15.0.3",
+    "react": "19.0.0-rc-66855b96-20241106",
+    "react-dom": "19.0.0-rc-66855b96-20241106",
+    "tailwind-merge": "^2.5.5"
+  },
+  "overrides": {
+    "framer-motion": {
+      "react": "19.0.0-rc-66855b96-20241106",
+      "react-dom": "19.0.0-rc-66855b96-20241106"
+    }
+  },
+ 
+ ```bash
+
+ if you're using motion instead of framer-motion, you can make the following changes:
+
+ 
+ ```bash
+ "dependencies": {
+    "motion": "^12.0.0-alpha.1",
+    "next": "15.0.3",
+    "react": "19.0.0-rc-66855b96-20241106",
+    "react-dom": "19.0.0-rc-66855b96-20241106",
+    "tailwind-merge": "^2.5.5"
+  },
+  "overrides": {
+    "motion": {
+      "react": "19.0.0-rc-66855b96-20241106",
+      "react-dom": "19.0.0-rc-66855b96-20241106"
+    }
+  },
+ ```
+ ### React icons and lucide React installtions
+
+ ```bash
+ npm i lucide-react react-icons
+ ```

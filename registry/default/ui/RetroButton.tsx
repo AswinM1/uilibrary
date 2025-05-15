@@ -23,7 +23,7 @@ export default function RetroButton({
         width: width,
         height: height,
       }}
-      className="relative px-5 py-2 font-bold rounded-sm text-black border-2 shadow-[0px_4px_1px_black]"
+      className="  justify-center px-5 py-2 font-bold rounded-sm text-white border-2 shadow-[0px_4px_1px_white]"
     >
       {text}
     </motion.button>

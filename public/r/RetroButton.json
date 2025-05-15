@@ -7,7 +7,7 @@
   "files": [
     {
       "path": "registry/default/ui/RetroButton.tsx",
-      "content": "\"use client\";\r\nimport React from \"react\";\r\nimport { motion } from \"framer-motion\";\r\n\r\ninterface ButtonProp {\r\n  text?: string;\r\n  color?: string;\r\n  width?: string;   // e.g., \"150px\" or \"100%\"\r\n  height?: string;  // e.g., \"40px\"\r\n}\r\n\r\nexport default function RetroButton({\r\n  text = \"Click\",\r\n  color = \"#c33740\",\r\n  width,\r\n  height,\r\n}: ButtonProp) {\r\n  return (\r\n    <motion.button\r\n      whileTap={{ scale: 0.95, boxShadow: \"0px 0px 0px 0px\" }}\r\n      style={{\r\n        backgroundColor: color,\r\n        width: width,\r\n        height: height,\r\n      }}\r\n      className=\"relative px-5 py-2 font-bold rounded-sm text-black border-2 shadow-[0px_4px_1px_black]\"\r\n    >\r\n      {text}\r\n    </motion.button>\r\n  );\r\n}\r\n",
+      "content": "\"use client\";\r\nimport React from \"react\";\r\nimport { motion } from \"framer-motion\";\r\n\r\ninterface ButtonProp {\r\n  text?: string;\r\n  color?: string;\r\n  width?: string;   // e.g., \"150px\" or \"100%\"\r\n  height?: string;  // e.g., \"40px\"\r\n}\r\n\r\nexport default function RetroButton({\r\n  text = \"Click\",\r\n  color = \"#c33740\",\r\n  width,\r\n  height,\r\n}: ButtonProp) {\r\n  return (\r\n    <motion.button\r\n      whileTap={{ scale: 0.95, boxShadow: \"0px 0px 0px 0px\" }}\r\n      style={{\r\n        backgroundColor: color,\r\n        width: width,\r\n        height: height,\r\n      }}\r\n      className=\"  justify-center px-5 py-2 font-bold rounded-sm text-white border-2 shadow-[0px_4px_1px_white]\"\r\n    >\r\n      {text}\r\n    </motion.button>\r\n  );\r\n}\r\n",
       "type": "registry:ui"
     }
   ]

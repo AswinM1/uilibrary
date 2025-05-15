@@ -1,4 +1,68 @@
-"use client";
+import { Table, Playground,Tabs } from 'nextra/components'
+import Bento from '../../../../registry/default/ui/Bento'
+import MotionTile from '../../../../registry/default/ui/Bento' // or split MotionTile export if needed
+
+# Bento Grid
+
+A visually engaging **bento grid** made up of animated tiles. The tiles support background color, text color, optional image backgrounds, and custom children.
+
+## MotionTile Props
+
+<Table>
+  <thead>
+    <Table.Tr>
+      <Table.Th>Prop</Table.Th>
+      <Table.Th>Type</Table.Th>
+      <Table.Th>Default</Table.Th>
+      <Table.Th>Description</Table.Th>
+    </Table.Tr>
+  </thead>
+  <tbody>
+    <Table.Tr>
+      <Table.Td>children</Table.Td>
+      <Table.Td><code>React.ReactNode</code></Table.Td>
+      <Table.Td>—</Table.Td>
+      <Table.Td>Content to display inside the tile</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>className</Table.Td>
+      <Table.Td><code>string</code></Table.Td>
+      <Table.Td>—</Table.Td>
+      <Table.Td>Additional Tailwind/utility classes</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>bgColor</Table.Td>
+      <Table.Td><code>string</code></Table.Td>
+      <Table.Td>"#ffffff"</Table.Td>
+      <Table.Td>Background color of the tile (ignored if <code>imageUrl</code> is set)</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>textColor</Table.Td>
+      <Table.Td><code>string</code></Table.Td>
+      <Table.Td>"#000000"</Table.Td>
+      <Table.Td>Text color inside the tile</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>imageUrl</Table.Td>
+      <Table.Td><code>string</code></Table.Td>
+      <Table.Td>—</Table.Td>
+      <Table.Td>Optional background image URL (overrides <code>bgColor</code>)</Table.Td>
+    </Table.Tr>
+  </tbody>
+</Table>
+
+## Live Bento Grid Demo
+
+<Tabs items={['component', 'code']}>
+ <Tabs.Tab>
+ <Playground
+  source={`<Bento />`}
+  components={{ Bento }}
+/>
+</Tabs.Tab>
+  <Tabs.Tab>
+  ```ts
+ "use client";
 import React from "react";
 import { motion } from "framer-motion";
 
@@ -84,3 +148,7 @@ const Bento = () => {
 };
 
 export default Bento;
+```
+  </Tabs.Tab>
+  
+</Tabs>

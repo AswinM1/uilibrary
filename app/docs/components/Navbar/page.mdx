@@ -1,3 +1,54 @@
+import { Table, Playground,Tabs } from 'nextra/components'
+import Navbar from '../../../../registry/default/ui/Navbar'
+
+# Navbar Component
+
+The `Navbar` component is a responsive navigation bar built with Framer Motion. It supports a customizable background color and dynamic links with individual colors and styles. It includes a mobile toggle menu with animated links.
+
+## Props
+
+<Table>
+  <thead>
+    <Table.Tr>
+      <Table.Th>Prop</Table.Th>
+      <Table.Th>Type</Table.Th>
+      <Table.Th>Default</Table.Th>
+      <Table.Th>Description</Table.Th>
+    </Table.Tr>
+  </thead>
+  <tbody>
+    <Table.Tr>
+      <Table.Td>color</Table.Td>
+      <Table.Td><code>string</code></Table.Td>
+      <Table.Td>"#facc15"</Table.Td>
+      <Table.Td>Background color of the navbar</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>links</Table.Td>
+      <Table.Td><code>{ "name: string, color: string, text: string" }[]</code></Table.Td>
+      <Table.Td>
+        [
+        <br />&nbsp;&nbsp;{"{ name: 'Home', color: '#3e446e', text: '#000' }"},
+        <br />&nbsp;&nbsp;{"{ name: 'Docs', color: '#013445', text: '#000' }"}
+        <br />]
+      </Table.Td>
+      <Table.Td>Array of navigation links with individual background and text colors</Table.Td>
+    </Table.Tr>
+  </tbody>
+</Table>
+
+
+
+<Tabs items={['component', 'code']}>
+ <Tabs.Tab>
+<Playground
+  source={`<Navbar />`}
+  components={{Navbar}}
+/>
+
+</Tabs.Tab>
+  <Tabs.Tab>
+ ```ts
 "use client";
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -92,3 +143,7 @@ function Navbar({ color = "#facc15", links = defaultLinks }: Props) {
 }
 
 export default Navbar;
+```
+  </Tabs.Tab>
+  
+</Tabs>

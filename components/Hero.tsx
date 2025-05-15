@@ -77,7 +77,7 @@ function Hero() {
           A set of beautifully-designed, Retro Themed, accessible components
         </p>
         <div className="mt-8 flex w-full justify-center gap-5">
-          <Link href={"/origin/docs"}>
+          <Link href={"/docs"}>
           <RetroButton width="150px" height="50px" text="Get Started" />
           
           </Link>

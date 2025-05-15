@@ -1,0 +1,40 @@
+import { Table, Playground } from 'nextra/components'
+import Login from '../../../../registry/default/ui/Login'
+
+# Login Component
+
+The `Login` component provides a styled, animated login form with customizable color and button text. It captures username and password inputs and logs them on submission.
+
+## Props
+
+<Table>
+  <thead>
+    <Table.Tr>
+      <Table.Th>Prop</Table.Th>
+      <Table.Th>Type</Table.Th>
+      <Table.Th>Default</Table.Th>
+      <Table.Th>Description</Table.Th>
+    </Table.Tr>
+  </thead>
+  <tbody>
+    <Table.Tr>
+      <Table.Td>text</Table.Td>
+      <Table.Td><code>string</code></Table.Td>
+      <Table.Td>"Login"</Table.Td>
+      <Table.Td>Sets the title and submit button text</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>color</Table.Td>
+      <Table.Td><code>string</code></Table.Td>
+      <Table.Td>"#dfa05d"</Table.Td>
+      <Table.Td>Background color of the form container</Table.Td>
+    </Table.Tr>
+  </tbody>
+</Table>
+
+## Live Example
+
+<Playground
+  source={`<Login/>`}
+  components={{ Login }}
+/>

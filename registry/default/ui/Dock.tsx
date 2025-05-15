@@ -13,7 +13,7 @@ const apps = [
 
 const Dock = () => {
   return (
-    <div className="fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-neutral-800 w-fit p-2 rounded-2xl shadow-[6px_6px_0px_black] border-2 border-black flex gap-4 backdrop-blur-md z-50">
+    <div className=" bg-neutral-800 w-fit p-2 rounded-2xl shadow-[6px_6px_0px_black] border-2 border-black flex gap-4 backdrop-blur-md z-50">
       {apps.map((app, index) => (
         <motion.div
           key={index}

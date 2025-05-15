@@ -7,7 +7,7 @@
     text?: string;
   }
 
-  export default function Login({ text = "Login", color = "#dfa05d" }: LoginProps) {
+  export default function Login({ text = "Login", color = "white" }: LoginProps) {
     const [formData, setFormData] = useState({ username: '', password: '' });
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -26,7 +26,7 @@
       <div>
         <form
           onSubmit={handleSubmit}
-          className='flex flex-col shadow-xl shadow-black/50 mx-auto justify-center items-center gap-5 border-2 px-11 py-7'
+          className='flex flex-col shadow-xl w-fit mx-auto inner-shadow items-center gap-5 border-2 px-11 py-7'
           style={{ backgroundColor: color }}
         >
           <h2 className='font-bold tracking-tight text-4xl text-black'>{text}</h2>
